@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Blank Heroku Project</title>
+    <title>Productivity Timer</title>
     <!-- Favicons
     ================================================== -->
     <link rel="manifest" href="assets/img/favicon/manifest.json">
@@ -19,10 +19,15 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/less/main.css">
+
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <script type="text/javascript" src="assets/js/mespeak.js"></script>
+    <script type="text/javascript" src="assets/js/header.js"></script>
+
 
 </head>
 
@@ -34,11 +39,33 @@ $page = "index-page";
 $hasGmap = true;
 ?>
 
+<div class="row mainContainer text-lowercase">
+    <div class="row center-block text-center">
+        <h1>Be productive</h1>
+    </div>
+    <div class="row ">
+        <div style="margin-bottom: 40px">
+            <h2>Start: <span id="beginTime"></span></h2>
+            <h2>Elapsed: <span id="bckColour"><span id="difTime">0.00 minutes</span></span></h2>
+            <h2>Sound: <span class="pointer" id="sndOn">On</span>/<span class="pointer" id="sndOff">off</span></h2>
+
+            <button class="btn" id="pause" onclick="pause()">Pause</button>
+            <button class="btn" id="reset" onclick="reset()">Reset</button>
+            <button class="btn" id="breakButton" onclick="takeBreak()">break</button>
+            <h2 class="hidden" id="breakField">Break: <span id="breakTime">0.00</span>/15.00 minutes</h2>
+      </div>
+    </div>
+
+    <div class="row center-block text-center">
+        <h1>Produce results</h1>
+    </div>
+</div>
+
+
 
 <!--=========================================== JS SCRIPTS ==========================================-->
 <!-- jQuery -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-
 
 <!-- Bootstrap Core JavaScript -->
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -46,12 +73,8 @@ $hasGmap = true;
 <!-- Plugin JavaScript -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-<!-- Theme JavaScript -->
-
-
-<!-- Additional JS Files-->
-
-
+<!-- Custom JavaScript -->
+<script type="text/javascript" src="assets/js/footer.js"></script>
 
 </body>
 </html>
