@@ -39,23 +39,29 @@ $page = "index-page";
 $hasGmap = true;
 ?>
 
+
 <div class="row mainContainer text-lowercase">
     <div class="row center-block text-center">
         <h1>Be productive</h1>
     </div>
-    <div class="row ">
-        <div style="margin-bottom: 40px">
-            <h2>Start: <span id="beginTime"></span></h2>
-            <h2>Elapsed: <span id="bckColour"><span id="difTime">0.00 minutes</span></span></h2>
-            <h2>Sound: <span class="pointer" id="sndOn">On</span>/<span class="pointer" id="sndOff">off</span></h2>
+    <div class="row center-block mainBlockOuter">
+        <div class="center-block mainBlock">
+            <div>
+                <h2>Start: <span id="beginTime"></span></h2>
+                <h2>Elapsed: <span id="bckColour"><span id="difTime">0.00 minutes</span></span></h2>
+                <h2>Sound: <span class="pointer" id="sndOn">On</span>/<span class="pointer" id="sndOff">off</span></h2>
 
-            <button class="btn" id="pause" onclick="pause()">Pause</button>
-            <button class="btn" id="reset" onclick="reset()">Reset</button>
-            <button class="btn" id="breakButton" onclick="takeBreak()">break</button>
-            <h2 class="hidden" id="breakField">Break: <span id="breakTime">0.00</span>/15.00 minutes</h2>
-      </div>
+                <div class="text-center">
+                    <button class="btn" id="pause" onclick="pause()">Pause</button>
+                    <button class="btn" id="reset" onclick="reset()">Reset</button>
+                    <button class="btn" id="breakButton" onclick="takeBreak()">break</button>
+                </div>
+
+                <h2 class="hidden" id="breakField">Break: <span id="breakTime">0.00</span>/15.00 minutes</h2>
+            </div>
+        </div>
+
     </div>
-
     <div class="row center-block text-center">
         <h1>Produce results</h1>
     </div>
