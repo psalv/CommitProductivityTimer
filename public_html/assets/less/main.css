@@ -1,0 +1,36 @@
+body {
+  background: url("../img/background.png");
+  font-family: 'Bevan', cursive !important;
+}
+h1 {
+  font-size: 3.3em;
+  margin: 40px;
+}
+.mainBlock {
+  width: 750px;
+  height: 220px;
+}
+.title {
+  width: 750px;
+}
+#bckColour {
+  padding: 5px;
+}
+.btn {
+  width: 100px;
+  background-color: black;
+  color: white !important;
+  text-transform: lowercase;
+}
+.btn:hover {
+  background-color: #262626;
+}
+.mainContainer {
+  margin: 10%;
+}
+.pointer {
+  cursor: pointer;
+}
+#sndOn {
+  color: red;
+}
