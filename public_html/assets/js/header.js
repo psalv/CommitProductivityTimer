@@ -1,5 +1,5 @@
-meSpeak.loadConfig("mespeak_config.json");
-meSpeak.loadVoice("voices/en/en.json");
+meSpeak.loadConfig("assets/js/mespeak_config.json");
+meSpeak.loadVoice("assets/voices/en/en.json");
 
 function loadVoice(id) {
     var fname="voices/"+id+".json";
