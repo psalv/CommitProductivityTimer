@@ -10,13 +10,6 @@ var talkTime = 0;
 var firstCallBack = true;
 var soundOn = true;
 
-meSpeak.speak( "hello", {
-    amplitude: '100',
-    wordgap: '10',
-    pitch: '50',
-    speed: '175',
-    variant: 'm1 (male 1)'
-}, null);
 
 document.getElementById('beginTime').innerHTML = startTime.toString();
 
@@ -166,7 +159,7 @@ function updateTimeBreak() {
     // This function only occurs while we are onBreak, we update the html and check to see if we have exceed the 15 min limit.
     if(onBreak){
         var elapsed = (new Date().getTime() - startBreak.getTime()) / 60000;
-        if(elapsed >= 0.13){
+        if(elapsed >= 15){
             talkBreak();
             takeBreak();
         }

@@ -23,8 +23,9 @@
     <link rel="stylesheet" type="text/css" href="assets/less/main.css">
 
     <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
 
+    <!-- JS for text-to-speech -->
     <script type="text/javascript" src="assets/js/mespeak.js"></script>
     <script type="text/javascript" src="assets/js/header.js"></script>
 
@@ -41,15 +42,15 @@ $hasGmap = true;
 
 
 <div class="row mainContainer text-lowercase">
-    <div class="row center-block text-center">
-        <h1>Be productive</h1>
+    <div class="row center-block text-center title">
+        <h1>Be productive.</h1>
     </div>
     <div class="row center-block mainBlockOuter">
         <div class="center-block mainBlock">
             <div>
                 <h2>Start: <span id="beginTime"></span></h2>
                 <h2>Elapsed: <span id="bckColour"><span id="difTime">0.00 minutes</span></span></h2>
-                <h2>Sound: <span class="pointer" id="sndOn">On</span>/<span class="pointer" id="sndOff">off</span></h2>
+                <h2>Sound: <span class="pointer" id="sndOn">On</span> / <span class="pointer" id="sndOff">off</span></h2>
 
                 <div class="text-center">
                     <button class="btn" id="pause" onclick="pause()">Pause</button>
@@ -62,8 +63,8 @@ $hasGmap = true;
         </div>
 
     </div>
-    <div class="row center-block text-center">
-        <h1>Produce results</h1>
+    <div class="row center-block text-center title">
+        <h1>Produce results.</h1>
     </div>
 </div>
 
